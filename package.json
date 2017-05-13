@@ -1,0 +1,33 @@
+{
+  "name": "run-each-limit",
+  "version": "0.0.0",
+  "description": "Run an async task for each array element in parallel, but limit the number of tasks executing at the same time.",
+  "author": {
+    "name": "Damian Krzeminski",
+    "email": "pirxpilot@furkot.com",
+    "url": "https://pirxpilot.me"
+  },
+  "repository": "pirxpilot/run-each-limit",
+  "license": "MIT",
+  "keywords": [
+    "run-each-limit",
+    "async",
+    "asynchronous",
+    "parallel",
+    "callback",
+    "limit",
+    "array"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "jshint": "^2.9.4",
+    "mocha": "^3.3.0"
+  },
+  "scripts": {
+    "test": "make check"
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ]
+}
