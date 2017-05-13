@@ -1,6 +1,6 @@
 {
   "name": "run-each-limit",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Run an async task for each array element in parallel, but limit the number of tasks executing at the same time.",
   "author": {
     "name": "Damian Krzeminski",
