@@ -15,9 +15,20 @@ $ npm install --save run-each-limit
 ## Usage
 
 ```js
-var runEachLimit = require('run-each-limit');
+var eachLimit = require('run-each-limit');
 
-runEachLimit('Rainbow');
+var items = ['a', 'b', 'c', 'd'];
+var result = '';
+
+function onItem(item, fn) {
+  result += item;
+  setTimeout(fn, 200);
+}
+
+eachLimit(items, 2, onItem, function(err) {
+  console.log(result); // 'abcd'
+});
+
 ```
 
 ## License
