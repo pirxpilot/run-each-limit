@@ -7,7 +7,7 @@
     "email": "pirxpilot@furkot.com",
     "url": "https://pirxpilot.me"
   },
-  "repository": "pirxpilot/run-each-limit",
+  "repository": "github:pirxpilot/run-each-limit",
   "license": "MIT",
   "keywords": [
     "run-each-limit",

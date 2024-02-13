@@ -1,6 +1,6 @@
 [![NPM version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Dependency Status][gemnasium-image]][gemnasium-url]
+[![Build Status][build-image]][build-url]
+[![Dependency Status][deps-image]][deps-url]
 
 # run-each-limit
 
@@ -35,11 +35,11 @@ eachLimit(items, 2, onItem, function(err) {
 
 MIT © [Damian Krzeminski](https://pirxpilot.me)
 
-[npm-image]: https://img.shields.io/npm/v/run-each-limit.svg
+[npm-image]: https://img.shields.io/npm/v/run-each-limit
 [npm-url]: https://npmjs.org/package/run-each-limit
 
-[travis-url]: https://travis-ci.org/pirxpilot/run-each-limit
-[travis-image]: https://img.shields.io/travis/pirxpilot/run-each-limit.svg
+[build-url]: https://github.com/pirxpilot/run-each-limit/actions/workflows/check.yaml
+[build-image]: https://img.shields.io/github/actions/workflow/status/pirxpilot/run-each-limit/check.yaml?branch=main
 
-[gemnasium-image]: https://img.shields.io/gemnasium/pirxpilot/run-each-limit.svg
-[gemnasium-url]: https://gemnasium.com/pirxpilot/run-each-limit
+[deps-image]: https://img.shields.io/librariesio/release/npm/run-each-limit
+[deps-url]: https://libraries.io/npm/run-each-limit
