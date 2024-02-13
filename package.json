@@ -7,7 +7,7 @@
     "email": "pirxpilot@furkot.com",
     "url": "https://pirxpilot.me"
   },
-  "repository": "pirxpilot/run-each-limit",
+  "repository": "github:pirxpilot/run-each-limit",
   "license": "MIT",
   "keywords": [
     "run-each-limit",
@@ -20,8 +20,7 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "jshint": "^2.9.4",
-    "mocha": "^3.3.0"
+    "@pirxpilot/jshint": "~3"
   },
   "scripts": {
     "test": "make check"
