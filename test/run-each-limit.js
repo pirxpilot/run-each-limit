@@ -1,8 +1,10 @@
-var assert = require('assert');
+const { describe, it } = require('node:test');
+const assert = require('node:assert/strict');
+
 var eachLimit = require('../');
 
 describe('run-each-limit', function () {
-  it ('should work if taks array is empty', function (done) {
+  it ('should work if taks array is empty', function (_, done) {
     eachLimit(
       [],
       2,
@@ -13,7 +15,7 @@ describe('run-each-limit', function () {
     );
   });
 
-  it('should run all task', function (done) {
+  it('should run all task', function (_, done) {
     var tasks = ['a', 'b', 'c', 'd'];
     var result = '';
 
@@ -29,7 +31,7 @@ describe('run-each-limit', function () {
 
   });
 
-  it('should exit on error', function (done) {
+  it('should exit on error', function (_, done) {
     var tasks = ['a', 'b', 'c', 'd'];
     var result = '';
 
@@ -48,7 +50,7 @@ describe('run-each-limit', function () {
 
   });
 
-  it('should respect limit on error', function (done) {
+  it('should respect limit on error', function (_, done) {
     var LIMIT = 4;
     var tasks = ['a', 'b', 'c', 'd', 'e', 'f'];
     var result = '';
