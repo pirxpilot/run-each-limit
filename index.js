@@ -1,7 +1,6 @@
 module.exports = runEachLimit;
 
 function runEachLimit(items, limit, task, done) {
-
   let pending = items.length;
   let working = 0;
   let index = 0;
