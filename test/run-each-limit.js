@@ -1,6 +1,5 @@
-const { describe, it } = require('node:test');
-
-const eachLimit = require('../');
+import { describe, it } from 'node:test';
+import eachLimit from '../index.js';
 
 describe('run-each-limit', () => {
   it('should work if tasks array is empty', (t, done) => {
