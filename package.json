@@ -11,6 +11,10 @@
     "type": "git",
     "url": "git+https://github.com/pirxpilot/run-each-limit.git"
   },
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
   "license": "MIT",
   "keywords": [
     "run-each-limit",
@@ -21,7 +25,6 @@
     "limit",
     "array"
   ],
-  "dependencies": {},
   "devDependencies": {
     "@biomejs/biome": "2.0.5"
   },
