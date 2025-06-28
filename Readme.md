@@ -14,11 +14,13 @@ $ npm install --save run-each-limit
 
 ## Usage
 
-```js
-var eachLimit = require('run-each-limit');
+### Callback
 
-var items = ['a', 'b', 'c', 'd'];
-var result = '';
+```js
+import eachLimit from 'run-each-limit';
+
+const items = ['a', 'b', 'c', 'd'];
+const result = '';
 
 function onItem(item, fn) {
   result += item;
@@ -26,6 +28,25 @@ function onItem(item, fn) {
 }
 
 eachLimit(items, 2, onItem, function(err) {
+  console.log(result); // 'abcd'
+});
+
+```
+
+### Promise
+
+```js
+import eachLimit from 'run-each-limit';
+
+const items = ['a', 'b', 'c', 'd'];
+const result = '';
+
+function onItem(item) {
+  result += item;
+  return new Promise(resolve => setTimeout(resolve, 200));
+}
+
+eachLimit(items, 2, onItem).then(() => {
   console.log(result); // 'abcd'
 });
 

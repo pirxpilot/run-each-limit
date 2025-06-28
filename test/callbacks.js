@@ -1,15 +1,20 @@
 import { describe, it } from 'node:test';
-import eachLimit from '../index.js';
+import eachLimit from '../lib/callbacks.js';
 
-describe('run-each-limit', () => {
+describe('run-each-limit (callback)', () => {
   it('should work if tasks array is empty', (t, done) => {
+    eachLimit([], 2, () => t.assert.ok(false, 'should not call task'), done);
+  });
+
+  it('should error if limit is invalid', (t, done) => {
     eachLimit(
-      [],
-      2,
-      () => {
-        t.assert.ok(false, 'should not call task');
-      },
-      done
+      ['a', 'b', 'c', 'd'],
+      0,
+      () => t.assert.ok(false, 'should not call task'),
+      err => {
+        t.assert.ok(err);
+        done();
+      }
     );
   });
 
@@ -39,7 +44,7 @@ describe('run-each-limit', () => {
       }, 5);
     }
 
-    eachLimit(tasks, 1, onItem, err => {
+    eachLimit(tasks, 3, onItem, err => {
       t.assert.ok(err);
       t.assert.equal(result, 'ab');
       done();
