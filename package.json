@@ -13,7 +13,7 @@
   },
   "type": "module",
   "exports": {
-    ".": "./index.js"
+    ".": "./lib/callbacks.js"
   },
   "license": "MIT",
   "keywords": [
@@ -32,6 +32,6 @@
     "test": "make check"
   },
   "files": [
-    "index.js"
+    "lib"
   ]
 }
