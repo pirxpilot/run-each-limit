@@ -36,7 +36,7 @@ eachLimit(items, 2, onItem, function(err) {
 ### Promise
 
 ```js
-import eachLimit from 'run-each-limit';
+import eachLimit from 'run-each-limit/promises';
 
 const items = ['a', 'b', 'c', 'd'];
 const result = '';
