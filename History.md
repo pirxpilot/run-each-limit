@@ -1,4 +1,10 @@
 
+2.0.1 / 2025-06-28
+==================
+
+ * use test asserts
+ * use `biome` as a linter and formatter
+
 2.0.0 / 2024-02-13
 ==================
 
