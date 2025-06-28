@@ -1,7 +1,7 @@
 import { describe, it } from 'node:test';
 import eachLimit from '../lib/callbacks.js';
 
-describe('run-each-limit', () => {
+describe('run-each-limit (callback)', () => {
   it('should work if tasks array is empty', (t, done) => {
     eachLimit([], 2, () => t.assert.ok(false, 'should not call task'), done);
   });
