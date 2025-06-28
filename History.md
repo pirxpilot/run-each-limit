@@ -1,4 +1,10 @@
 
+3.0.0 / 2025-06-28
+==================
+
+ * add promise based implementation
+ * transition to ESM format
+
 2.0.1 / 2025-06-28
 ==================
 
